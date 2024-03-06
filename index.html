@@ -410,7 +410,6 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         </div>
        
         <div class="form-message">
-
           <h3 class="form-title">Gửi lời chúc</h3>
           <form action="" id="messageForm" method="POST">
           <input type='hidden' id="postId" value='1304' />
@@ -539,7 +538,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
     <!-- END THANK YOU --><!-- END THANKYOU -->
 </main>
    <!-- END TIN NHẮN -->
-   <script>
+   <!-- <script>
     fetch('/wp-json/wp/v2/comments?post=1304&per_page=100',
         {
          method: 'GET',
@@ -595,14 +594,14 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
         .catch(error => console.error('Error:', error));
      });
      
-    </script>
+    </script> -->
 <script>
   //XỬ LÝ FORM
 $(document).ready(function(){
   $('.message-form').fadeOut(300)
   $('#form').on('submit', function(e){
       e.preventDefault();
-      f_userName = "Công Thành-Phương Ánh"
+      f_userName = "Trung Hiếu-Thúy Hiền"
       f_check = $('input[type="radio"]:checked').val()
       f_name = $(this).find('#f_name').val()
       f_numUser = $('#num_user').find('option:selected').val()
@@ -618,7 +617,7 @@ $(document).ready(function(){
       }
      $('.wedding-submit[type="submit"]').text('Đang gửi ...')
      $.ajax({
-      url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdD9g3WsFXklx1iJ2WTwnaKq7qXDh8fLcOetjSV8GMatzoWaA/formResponse",
+      url: "https://forms.gle/Xn7udNnS63beetBR8",
       type: "POST",
       data : form_data,
       dataType: "xml",
@@ -642,11 +641,11 @@ $(document).ready(function(){
 })
 </script>
 <!-- END FORM XÁC NHẬN -->
-<script>
+<!-- <script>
  $(':root').css('--primary-color', '');
  $(':root').css('--secondary-color', '');
  $(':root').css('--bg', '');
-</script>
+</script> -->
 <script>
   window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/thiepdientu.com.vn\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.4.3"}};
   /*! This file is auto-generated */
@@ -654,10 +653,8 @@ $(document).ready(function(){
   </script>
 <!-- AUDIO -->
 <audio src="https://thiepdientu.com.vn/wp-content/uploads/2024/01/Shane-Filan-Beautiful-In-White-Official-Video-3.mp3" controls autoplay id="audio">
-
 </audio>
 <!-- END AUDIO --> <!-- FOOTER -->
-
 <button class='toggleAudio'>
         <i class='ri-volume-mute-fill'></i>
 </button>
@@ -674,19 +671,18 @@ $(document).ready(function(){
 <!-- <script src="https://thiepdientu.com.vn/wp-content/themes/wedding-studio/js/uikit-icons.min.js?ver=1.0.0" id="uikit icon-js"></script> -->
 <!-- <script src="https://thiepdientu.com.vn/wp-content/themes/wedding-studio/js/uikit.min.js?ver=1.0.0" id="uikit js-js"></script> -->
 <!-- <script src="https://thiepdientu.com.vn/wp-includes/js/comment-reply.min.js?ver=6.4.3" id="comment-reply-js" async data-wp-strategy="async"></script> -->
-    
-</body>
-
-</html>
 <script>
-        var swiper = new Swiper(".banner-slide", {
-      effect: "fade",
-      loop: true,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },  
-    });
-     </script>
+  var swiper = new Swiper(".banner-slide", {
+effect: "fade",
+loop: true,
+autoplay: {
+  delay: 2000,
+  disableOnInteraction: false,
+},  
+});
+</script>
+</body>
+</html>
+
 
 
